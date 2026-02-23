@@ -13,13 +13,14 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.4.0"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.5.1"),
     ],
     targets: [
         .target(
             name: "AdiscopeMediaMaxAdapterInMobiTarget",
             dependencies: [
                 .target(name: "AdiscopeMediaMaxAdapterInMobi"),
+                .target(name: "AdiscopeMediaMaxAdapterInMobiMediationAdapter"),
                 .target(name: "InMobiSDK"),
                 .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
             ],
@@ -27,13 +28,18 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterInMobi",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AdiscopeMediaMaxAdapterInMobi.zip",
-            checksum: "dd7179210b6e42a5e509f5f54c3eeaf7c7370dd9327135c2d7fc8d1c7e37e953"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AdiscopeMediaMaxAdapterInMobi.zip",
+            checksum: "376d639b0381d07746ed9a99bf90dc5a517cabcfd1f7932ac8ffec57bc05e0be"
+        ),
+        .binaryTarget(
+            name: "AdiscopeMediaMaxAdapterInMobiMediationAdapter",
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AppLovinMediationInMobiAdapter.xcframework.zip",
+            checksum: "0117c6c4af921e0a612c1c8ea68bec8e3ad90b99d2986b80df3d9c2e12662fe0"
         ),
         .binaryTarget(
             name: "InMobiSDK",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/InMobiSDK.xcframework.zip",
-            checksum: "91171fdbb93f9ccc5dac56c3cdb9b37beafc711f4f8abc4d67eda47e68a79fd5"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/InMobiSDK.xcframework.zip",
+            checksum: "4a7ff71b8128766db4f0b03c3a70f8abb5f3cc9023824ed114518538f9d2f45f"
         ),
     ]
 )
