@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.5.1"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.6.2"),
     ],
     targets: [
         .target(
@@ -28,18 +28,18 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterInMobi",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AdiscopeMediaMaxAdapterInMobi.zip",
-            checksum: "376d639b0381d07746ed9a99bf90dc5a517cabcfd1f7932ac8ffec57bc05e0be"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/AdiscopeMediaMaxAdapterInMobi.zip",
+            checksum: "26ee50198e98d5e0e3f94bfe5028517a69e27be42f557724b7c84811a1ab1f5e"
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterInMobiMediationAdapter",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AppLovinMediationInMobiAdapter.xcframework.zip",
-            checksum: "0117c6c4af921e0a612c1c8ea68bec8e3ad90b99d2986b80df3d9c2e12662fe0"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/AppLovinMediationInMobiAdapter.xcframework.zip",
+            checksum: "fa6006ad1a9081357639ff9ba13b5dd787b7c1d68da994a4989801e208a427ff"
         ),
         .binaryTarget(
             name: "InMobiSDK",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/InMobiSDK.xcframework.zip",
-            checksum: "4a7ff71b8128766db4f0b03c3a70f8abb5f3cc9023824ed114518538f9d2f45f"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/InMobiSDK.xcframework.zip",
+            checksum: "c6f614f8f8ed946dd0fce7c2b11aefb771427585f85d40e1db909889f8d36d70"
         ),
     ]
 )
